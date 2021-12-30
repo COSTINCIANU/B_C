@@ -1,15 +1,15 @@
-// import 'js/couture.js'
+
 // Je dit a jQuery vas me cherche l'id qui se appele add-imageCouture
-$('#add-imageCouture').click(function () {
+$('#add-imageBijoux') .onclick(function () {
 // Je récupère le numéro des futurs champs que je vais créer
 // On vas recuper le nombre de form-group qui existe dans la div qui se appele (couture_coutureImages) et stocker dans index
   const index = +$('#widgets-counter').val()
 
   // Je récupère le prototype des entrées (qui se trouve sur la div qui a l'id=couture_imageCoutures) en console
-  const tmpl = $('#couture_imageCoutures').data('prototype').replace(/_name_/g, index)
+  const tmpl = $('#bijoux_imageBijouxs').data('prototype').replace(/_name_/g, index)
 
   // J'injecte ce code de data_prototype au sein de la div
-  $('#couture_imageCoutures').append(tmpl)
+  $('#bijoux_imageBijouxs').append(tmpl)
 
   // On dit a notre widgets-counter que ca valeur se sera l'index pus un
   $('#widgets-counter').val(index + 1)
@@ -32,7 +32,7 @@ function handleDeleteButtons () {
 function updateCounter () {
 // Va cherche dans la div de form-group des images et leur nombre
 //
-  const count = +$('#couture_imageCouture div.form-group').length
+  const count = +$('#bijoux_imageBijoux div.form-group').length
   // On appele le compteur et ca valeur et on ajoute le compteur
   $('#widgets-counter').val(count)
 }
