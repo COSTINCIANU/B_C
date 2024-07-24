@@ -25,7 +25,3 @@ On fait la migrasion pou creé les table en bdd
 2) symfony server:start
 
 
-
-Dans le AdminBijouxController et AdminCoutureController il fu modifier le redirectToRoute sur 
-'return $this->redirectToRoute("admin_bijouxs_index");
-return $this->redirectToRoute("admin_coutures_index");
